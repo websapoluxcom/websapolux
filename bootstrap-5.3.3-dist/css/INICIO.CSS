@@ -1,0 +1,38 @@
+/* Ajustar el tamaño del carrusel */
+#carouselExampleCaptions {
+    width: 100%; /* Ajusta el carrusel al 100% del contenedor */
+    max-width: 600px; /* Tamaño máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel en la página */
+  }
+  
+  /* Asegura que las imágenes se ajusten bien dentro del carrusel */
+  .carousel-inner .carousel-item img {
+    width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
+  }
+  
+  /* Control de los botones de navegación */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Tamaño reducido de los botones */
+  }
+  
+  /* Estilo adicional para las leyendas en las imágenes */
+  .carousel-caption {
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para mejor visibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+  }
+  
+  /* Medias queries para hacer el carrusel responsive */
+  @media (max-width: 768px) {
+    #carouselExampleCaptions {
+      max-width: 100%; /* En pantallas pequeñas, el carrusel ocupa el 100% */
+    }
+  
+    .carousel-caption {
+      font-size: 1.2rem; /* Reducir el tamaño del texto en pantallas pequeñas */
+    }
+  }
+  
